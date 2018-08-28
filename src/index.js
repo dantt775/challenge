@@ -106,7 +106,7 @@ const myLogger = (store) => (next) => (action) => {
 }
 
 const store = createStore(
-    combineReducers({mathReducer,userReducer}), //the reducers have the same name 
+    combineReducers({ mathReducer, userReducer }), //the reducers have the same name 
     {},
     applyMiddleware(createLogger())
 );
@@ -132,10 +132,20 @@ store.dispatch({
 
 store.dispatch({
     type: 'SET_AGE',
-    payload: 30
+    payload: ageGet
 })
 
 store.dispatch({
     type: 'SET_NAME',
     payload: 'Test'
 })
+
+var ageGet = () =>{
+    return 11;
+}
+
+function ageCalc() {
+
+
+    return 35;
+}

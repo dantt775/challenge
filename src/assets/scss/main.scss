@@ -1,21 +1,6 @@
-// styles for carousel
-@import '../../../node_modules/slick-carousel/slick/slick.css';
-@import '../../../node_modules/slick-carousel/slick/slick-theme.css';
 
-
-
-
-
-.slick-next {
-    right: 5%!important;
-}
-
-.slick-prev { 
-    z-index: 1;
-    left: 5%!important;
-}
 
 
 body{
-    background-color:#080808;
+    background-color: white;
 }
